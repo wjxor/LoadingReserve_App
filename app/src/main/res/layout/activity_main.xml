@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="188dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Room Type" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rdbLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log house - 4" />
+
+                <RadioButton
+                    android:id="@+id/rdbVilla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Villa - 6" />
+
+                <RadioButton
+                    android:id="@+id/rdbCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Condominium - 4" />
+
+                <RadioButton
+                    android:id="@+id/rdbHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="Hotel - 2" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Persons" />
+
+            <EditText
+                android:id="@+id/edPersonNum"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Days" />
+
+            <EditText
+                android:id="@+id/edDays"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option" />
+
+            <CheckBox
+                android:id="@+id/chbBq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barbeque" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbBf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast" />
+
+                <EditText
+                    android:id="@+id/edBreakPersonNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvPerson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="persons" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Confirm"
+                app:backgroundTint="#9C9494" />
+
+            <TextView
+                android:id="@+id/tvCOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charge Of Day : "
+                android:textColor="#0A48F4" />
+
+            <TextView
+                android:id="@+id/tvEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extra Charge : "
+                android:textColor="#0A48F4" />
+
+            <TextView
+                android:id="@+id/tvTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Charge : "
+                android:textColor="#FF0009" />
+
+            <TextView
+                android:id="@+id/tvDR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Rate : "
+                android:textColor="#FF0009" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
